@@ -68,13 +68,13 @@ header {
 header .profile-image {
   margin-top: 50px;
   width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  height: 175px;
+  border-radius: 25%;
   border: 3px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2) rotateY(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -102,12 +102,12 @@ header .profile-image:hover {
   border-color: #ff99ff;
 }
 
-ul.skills {
+ul.list-item {
   padding: 0;
   text-align: center;
 }
 
-.skills li {
+.list-item li {
   border-radius: 6px;
   display: inline-block;
   background: #ff9904;
@@ -116,8 +116,25 @@ ul.skills {
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
+.list-item li:nth-child(odd) {
   background: #0399ff;
+}
+
+.list-item li:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+.hobby-food {
+  text-align: center;
+  width: 400px;
+  height: 250px;
+}
+
+.hobby-manga {
+  text-align: center;
+  width: 400px;
+  height: 300px;
 }
 
 footer {
@@ -177,6 +194,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   header {
